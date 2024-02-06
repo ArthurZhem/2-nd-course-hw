@@ -1,0 +1,41 @@
+.header {
+    background-image: url(./img/bg.jpg);
+    background-size: cover;
+    height: 1024px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 217px;
+
+    &__title {
+        font-size: 64px;
+    }
+
+    &__text {
+        margin-top: 32px;
+        margin-bottom: 44px;
+
+        & span {
+            font-weight: 700;
+        }
+    }
+
+    &__button {
+        background-color: #9C0332;
+        width: 234px;
+        height: 48px;
+        border-radius: 30px;
+        font-weight: 400;
+    }
+
+}
+
+.footer {
+padding-top: 32px;
+padding-bottom: 32px;
+
+    &__text {
+        font-weight: 400;
+        font-size: 12px;
+        text-align: center;
+    }
+}
