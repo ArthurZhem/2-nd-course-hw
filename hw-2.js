@@ -41,3 +41,33 @@ num /= 3;
 num++;
 num--;
 alert(num);
+
+// Задание 8
+let age = prompt("Сколько вам лет?");
+alert(age);
+
+// Задание 9.0
+let user = {
+    name: "Vasya",
+    age: 23,
+    isAdmin: true,
+};
+
+// Задание 9.1
+user["city of residence"] = "Москва";
+
+// Задание 9.2
+user.age = 32;
+
+// Задание 9.3
+const field = "city of residence";
+delete user[field];
+delete user["city of residence"];
+
+// Задание 9.4
+let info = prompt("Какую информацию хотите узнать о пользователе?");
+alert(user[info]);
+
+// Задание 10
+let name = prompt("Как вас зовут?");
+alert(`Привет, ${name}!`);
