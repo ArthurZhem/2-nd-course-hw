@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 178%;
+}
+
+body {
+  background: #000915;
+}
+
+img {
+  max-width: 100%;
+}
+
+.center {
+  padding-inline: max(50% - 600px, 16px);
+}
+
+.title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: normal;
+}
+
+.header {
+  background-image: url(./img/bg.jpg);
+  background-size: cover;
+  height: 1024px;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 217px;
+}
+.header__title {
+  font-size: 64px;
+}
+.header__text {
+  margin-top: 32px;
+  margin-bottom: 44px;
+}
+.header__text span {
+  font-weight: 700;
+}
+.header__button {
+  background-color: #9C0332;
+  width: 234px;
+  height: 48px;
+  border-radius: 30px;
+  font-weight: 400;
+}
+
+.footer {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.footer__text {
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
+}
+
+.game {
+  display: flex;
+  gap: 32px;
+  margin: 128px 0;
+}
+.game__card {
+  width: 100%;
+  height: 300px;
+  border-radius: 22px;
+  position: relative;
+}
+.game__card--1 {
+  background-image: url(/img/game1.jpg);
+  background-repeat: no-repeat;
+}
+.game__card--2 {
+  background-image: url(/img/game2.jpg);
+  background-repeat: no-repeat;
+}
+.game__card--3 {
+  background-image: url(/img/game3.jpg);
+  background-repeat: no-repeat;
+}
+.game__card p {
+  position: absolute;
+  bottom: 32px;
+  left: 32px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 133%;
+}/*# sourceMappingURL=main.css.map */
