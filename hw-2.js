@@ -19,7 +19,7 @@ a = 10;
 b = 2;
 
 const sum = a + b;
-alert=(sum);
+alert(sum);
 
 const difference = a - b;
 alert(difference);
