@@ -18,9 +18,16 @@ alert(creator);
 a = 10;
 b = 2;
 
-alert(sum);
+const sum = a + b;
+alert=(sum);
+
+const difference = a - b;
 alert(difference);
+
+const product = a * b;
 alert(product);
+
+const quolitat = a / b; 
 alert(quolitat);
 
 // Задание 5
@@ -62,7 +69,6 @@ user.age = 32;
 // Задание 9.3
 const field = "city of residence";
 delete user[field];
-delete user["city of residence"];
 
 // Задание 9.4
 let info = prompt("Какую информацию хотите узнать о пользователе?");
