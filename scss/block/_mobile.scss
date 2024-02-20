@@ -1,0 +1,49 @@
+@media (max-width: 767px) {
+    .center {
+        padding-inline: max(50% - 222px, 16px);
+    }
+
+    .title {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    .header {
+        padding-top: 238px;
+        height: 735px;
+        background-position: 31.5% 20%;
+
+        &__text {
+            text-align: center;
+            font-size: 14px;
+            margin: 32px 0;
+            & span {
+                font-size: 14px;
+            }
+        }
+
+        &__title {
+            font-size: 32px;
+            line-height: 39px;
+            text-align: center;
+        }
+    
+        &__button {
+            display: block;
+            margin: 0 auto;
+
+        }
+    }
+
+    .game,
+    .season__box {
+        flex-direction: column;
+    }
+
+    .season {
+        padding: 51px 0 85px;
+        &__text {
+            text-align: center;
+        }
+    }
+}
