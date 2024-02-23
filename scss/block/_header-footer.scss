@@ -2,9 +2,10 @@
     background-image: url(./img/bg.jpg);
     background-size: cover;
     height: 1024px;
-    background-position: center;
+    background-position: center 20%;
     background-repeat: no-repeat;
     padding-top: 217px;
+
 
     &__title {
         font-size: 64px;
@@ -25,6 +26,9 @@
         height: 48px;
         border-radius: 30px;
         font-weight: 400;
+    }
+
+    &__button:hover {background-color: #EB443F;
     }
 
 }
