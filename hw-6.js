@@ -1,8 +1,8 @@
 // Задание 1
 const numbs = [1, 5, 4, 10, 0, 3];
 for (const el of numbs) {
-    if (el == 10) break;
     console.log(el);
+    if (el === 10) break;
 }
 
 // Задание 2
@@ -47,11 +47,11 @@ console.log(numbz.indexOf(4))
 // Задание 7
 {
     const array = [9, 8, 7, 6, 5];
-    let value = prompt('Введите число');
-    if (array.includes(Number(value)))
-        alert('Угадал')
-    else
+    let value = prompt('Введите число').trim();
+    if (value === '' || isNaN(value) || !array.includes(Number(value)))
         alert('Не угадал')
+    else
+        alert('Угадал')
 }
 
 // Задание 8
@@ -63,17 +63,18 @@ console.log(numbz.indexOf(4))
 // Задание 9
 {
     const array = [[1, 2, 3], [4, 5, 6]];
-    let result = []
-    for (const element of array) {
-        result.push(...element)
-    }
+    let result = array.flat();
+    // let result = []
+    // for (const element of array) {
+    //     result.push(...element)
+    // }
     console.log(result)
 }
 
 // Задание 10
 {
     const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-    for (let index = 0; index < 9; index++) {
+    for (let index = 0; index < array.length - 1; index++) {
         const element = array[index];
         const neighbor = array[index + 1];
         console.log(element + neighbor);
@@ -83,9 +84,12 @@ console.log(numbz.indexOf(4))
 // Задание 11
 {
     const array = [2, 4, 6, 8];
-    const array2 = array.map((element) => element ** 2)
+    
+    function squares(array) {
+        return array.map((element) => element ** 2)
+    }
 
-    console.log(array2)
+    console.log(squares(array))
 }
 
 // Задание 12
@@ -96,26 +100,37 @@ console.log(numbz.indexOf(4))
     // let newFunction = (array) => 0
 
     const array = ['a', 'b', 'c', 'd'];
-    const array2 = array.map((element) => element.length);
-    console.log(array2);
+    
+    function words(array) {
+        return array.map((element) => element.length);
+    } 
+    
+    console.log(words(array));
 }
 
 // Задание 13
 {
     const array = [2, -4, 6, -8];
-    const array2 = array.filter((element) => element < 0);
-    console.log(array2)
+
+    function negative(array) {
+return array.filter((element) => element < 0)        
+    }
+    
+    console.log(negative(array))
 }
 
 // Задание 14
 {
     const array = [...Array(10)].map((element) => Math.floor(Math.random() * 10))
+const array2= array.filter((element) => element % 2 == 0)
+
     console.log(array);
+    console.log(array2)
 }
 
 // Задание 15
 {
     const array = [...Array(6)].map((element) => Math.ceil(Math.random() * 10));
     const sum = array.reduce((total, number) => total + number, 0);
-    console.log(sum / 6)
+    console.log(sum / array.length)
 }
