@@ -47,11 +47,14 @@ console.log(numbz.indexOf(4))
 // Задание 7
 {
     const array = [9, 8, 7, 6, 5];
-    let value = prompt('Введите число').trim();
+    let value = prompt('Введите число')
+    if (value !== null){
+    value = value.trim();
     if (value === '' || isNaN(value) || !array.includes(Number(value)))
         alert('Не угадал')
     else
         alert('Угадал')
+    }
 }
 
 // Задание 8
@@ -122,7 +125,7 @@ return array.filter((element) => element < 0)
 // Задание 14
 {
     const array = [...Array(10)].map((element) => Math.floor(Math.random() * 10))
-const array2= array.filter((element) => element % 2 == 0)
+const array2= array.filter((element) => element % 2 === 0)
 
     console.log(array);
     console.log(array2)
@@ -130,7 +133,7 @@ const array2= array.filter((element) => element % 2 == 0)
 
 // Задание 15
 {
-    const array = [...Array(6)].map((element) => Math.ceil(Math.random() * 10));
+    const array = [...Array(6)].map((element) => Math.ceil(Math.random() * 9 + 1));
     const sum = array.reduce((total, number) => total + number, 0);
     console.log(sum / array.length)
 }
