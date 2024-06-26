@@ -171,15 +171,15 @@ img {
   box-shadow: 0 0 0 3px #44d2ff;
 }
 .game__card--1 {
-  background-image: url(./img/Game1.png);
+  background-image: url(./img/game1.png);
   background-repeat: no-repeat;
 }
 .game__card--2 {
-  background-image: url(./img/Game2.png);
+  background-image: url(./img/game2.png);
   background-repeat: no-repeat;
 }
 .game__card--3 {
-  background-image: url(./img/Game3.png);
+  background-image: url(./img/game3.png);
   background-repeat: no-repeat;
 }
 .game__card p {
@@ -202,6 +202,23 @@ img {
 .season__content {
   display: flex;
   flex-direction: column;
+  gap: 32px;
+}
+
+.remember__pack {
+  display: flex;
+}
+.remember__pack__box {
+  width: 588px;
+  height: 235.6px;
+  top: 2662.2px;
+  left: 736px;
+  padding: 0px;
+  gap: 0px;
+  border-radius: 30px 0px 0px 0px;
+  opacity: 0px;
+}
+.remember__pack__content {
   gap: 32px;
 }
 
