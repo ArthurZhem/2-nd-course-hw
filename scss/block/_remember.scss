@@ -1,0 +1,23 @@
+.remember {
+// padding: 239px 0;
+
+&__pack {
+    display: flex;
+
+    &__box {
+        
+        width: 588px;
+        height: 235.6px;
+        top: 2662.2px;
+        left: 736px;
+        padding: 0px;
+        gap: 0px;
+        border-radius: 30px 0px 0px 0px;
+        opacity: 0px;
+    }
+
+    &__content {
+        gap: 32px;
+    }
+}
+}
